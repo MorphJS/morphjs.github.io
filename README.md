@@ -1,48 +1,37 @@
-# MorphJS
+<div align="center">
 
-Security notes, writeups and projects. Built with [Astro](https://astro.build) and deployed to GitHub Pages.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,100:7b2ff7&height=160&section=header&text=MorphJS&fontSize=52&fontColor=ffffff&fontAlignY=40&desc=Creo%20software%2C%20arte%20y%20objetos%20f%C3%ADsicos&descAlignY=62&descSize=16" alt="MorphJS" width="100%" />
 
-## Counter
+<p>Estudiante de Ingeniería de Software y desarrollador freelance.<br>Ahora mismo, enfocado en <b>hacking ético</b>.</p>
 
-Update this every Sunday.
+<p>
+<a href="https://TU-PORTFOLIO.com">Portfolio</a> ·
+<a href="https://linkedin.com/in/TU-USUARIO">LinkedIn</a> ·
+<a href="mailto:TU-CORREO@ejemplo.com">Email</a>
+</p>
 
-- Published notes: 0
-- Labs solved: 0
-- Hours: 0
+<p>
+<img src="https://skillicons.dev/icons?i=react,ts,nextjs,tailwind,git,linux&theme=dark" alt="Stack" />
+</p>
 
-## Local
+<table>
+  <tr>
+    <th>Proyecto</th>
+    <th>Qué es</th>
+    <th>Stack</th>
+  </tr>
+  <tr>
+    <td><a href="https://TU-PORTFOLIO.com"><b>Portfolio</b></a></td>
+    <td>Sitio con animaciones por scroll y 3D</td>
+    <td>Next.js · TS</td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/MorphJS/TU-REPO-TEMPLATE"><b>Premium Template</b></a></td>
+    <td>Base reutilizable para sitios de clientes</td>
+    <td>Vite · React · Tailwind</td>
+  </tr>
+</table>
 
-```bash
-npm install
-npm run dev      # http://localhost:4321
-npm run build    # type-check + production build into dist/
-```
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7b2ff7,100:0f0c29&height=80&section=footer" alt="" width="100%" />
 
-## Writing a note
-
-Create `src/content/blog/<slug>.md` with this frontmatter:
-
-```md
----
-title: "..."
-date: 2026-10-12
-platform: bandit   # bandit | tryhackme | portswigger | htb | project | note
-tags: []
-difficulty: easy   # easy | medium | hard (optional)
-status: draft      # draft | published
----
-```
-
-Only `status: published` notes get a URL, appear in lists, or enter the RSS feed.
-
-## Rules
-
-- Labs, practice platforms, CTFs and in-scope bug bounty programs only.
-- No active HTB machines, no exam content, no flags, no passwords of wargame levels.
-- Never commit `.ovpn` files, tokens or keys (see `.gitignore`).
-- Keep URLs stable: `/blog/<slug>/`. Renaming a file breaks links.
-
-## Deploy
-
-Push to `main`. In the GitHub repo: Settings → Pages → Source: **GitHub Actions**.
-The repo must be named exactly `morphjs.github.io` (lowercase) for the URL to be `https://morphjs.github.io`.
+</div>
