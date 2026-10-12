@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Security notes, writeups and projects by MorphJS.' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="MorphJS" href="/rss.xml" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="/">MorphJS</a>
+      <nav>
+        <a href="/blog/">Notes</a>
+        <a href="/rss.xml">RSS</a>
+        <a href="https://github.com/MorphJS">GitHub</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>Labs, CTFs and authorized programs only.</p>
+    </footer>
+  </body>
+</html>

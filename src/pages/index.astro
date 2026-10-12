@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+const posts = (await getCollection('blog', ({ data }) => data.status === 'published'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const latest = posts.slice(0, 5);
+---
+
+<Base title="MorphJS">
+  <h1>MorphJS</h1>
+  <p>
+    Learning ethical hacking in public: writeups, notes and projects.
+    Everything here comes from my own labs, practice platforms, CTFs
+    and in-scope programs.
+  </p>
+  <p class="meta">{posts.length} published {posts.length === 1 ? 'note' : 'notes'}</p>
+
+  <h2>Latest</h2>
+  {latest.length === 0 ? (
+    <p class="meta">Nothing published yet.</p>
+  ) : (
+    <ul class="posts">
+      {latest.map((post) => (
+        <li>
+          <a class="title" href={`/blog/${post.id}/`}>{post.data.title}</a>
+          <div class="meta">
+            {post.data.date.toISOString().slice(0, 10)} · {post.data.platform}
+          </div>
+        </li>
+      ))}
+    </ul>
+  )}
+  <p><a href="/blog/">All notes →</a></p>
+</Base>

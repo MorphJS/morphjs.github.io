@@ -1,0 +1,22 @@
+# build
+dist/
+.astro/
+
+# deps
+node_modules/
+
+# logs
+npm-debug.log*
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
+
+# security: nunca subir esto
+*.ovpn
+*.pem
+*.key
+.env
+.env.*
+secrets/
