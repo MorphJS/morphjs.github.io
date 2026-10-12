@@ -4,7 +4,7 @@ date: 2026-10-12
 platform: bandit
 tags: [linux, ssh, fundamentals]
 difficulty: easy
-status: draft
+status: published
 ---
 
 <!--
